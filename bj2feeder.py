@@ -31,7 +31,7 @@ bjurl = 'http://bj2.me/rss.php'
 bjurl = feedparser.parse( bjurl )
 
 #Verifica se algum release definido satisfaz algum download
-print('Procurando por torrents para baixar...')
+print('Procurando por torrents para baixar...\n')
 for rel in range( len(RELEASES) ):
         #Percorre a lista de feeds e os mostra um a um
         for max_feeds in range( 20 ):
@@ -39,8 +39,7 @@ for rel in range( len(RELEASES) ):
                 title = bjurl.entries[ max_feeds ].title
                 link = bjurl.entries[ max_feeds ].link
                 link = link.replace( 'detalhes', 'download' )
-                #if re.search( '\'.*' + RELEASES[ rel ] + '.*\'', title, re.I ):
-                if title.find( RELEASES[ rel ] ) >= 0:
+                if re.search( RELEASES[ rel ], title, re.I ):
                         print( 'Baixando Torrent: ' + title )
                         print( 'Link: ' + link )
                         os.system( "wget -q --header \"Cookie: pass=" + str( PASS ) + ";uid=" + str( UID ) + "\" -O \"" + title + ".torrent\" " + link )
