@@ -21,7 +21,7 @@ Before run the script you need to change some variables on code, like:
 ```
 os.chdir( '/home/username/some_folder' )
 ```
-Which you define the folder where your torrents will be downloaded.
+Which you define the folder where your torrents will be downloaded.<br/>
 
 ```
 RELEASES = [ "Release1|Release2|Release3" ]
@@ -76,7 +76,7 @@ Antes de executar o script é preciso mudar algumas variáveis no código do scr
 ```
 os.chdir( '/home/nome_usuario/algum_diretorio' )
 ```
-Onde você define o diretório onde seus torrents serão baixados.
+Onde você define o diretório onde seus torrents serão baixados.<br/>
 
 ```
 RELEASES = [ "Release1|Release2|Release3" ]
