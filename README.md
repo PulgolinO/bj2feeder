@@ -24,7 +24,7 @@ os.chdir( '/home/username/some_folder' )
 Which you define the folder where your torrents will be downloaded.<br/>
 
 ```
-RELEASES = [ "Release1|Release2|Release3" ]
+RELEASES = "Release1|Release2|Release3"
 ```
 Where you define filters to downloads your torrents.<br/>
 You can define hou much filters as you want, since you keep each one separated by pipe inside the quotes.<br/><br/>
@@ -33,7 +33,7 @@ Use of Wildcars are allowed to make more complicated search strings.<br/>
 > - Make use of ```.*``` to search for an unindefined number os characters.
 > - Make use of ```*``` to search for anything after your search string.<br/>
 ```
-Ex: RELEASES = [ "Game.*Thrones|Spider.man.2|Splinter.Cell*" ]
+Ex: RELEASES = "Game.*Thrones|Spider.man.2|Splinter.Cell*"
 ```
 
 Is your cookie variable.
@@ -79,7 +79,7 @@ os.chdir( '/home/nome_usuario/algum_diretorio' )
 Onde você define o diretório onde seus torrents serão baixados.<br/>
 
 ```
-RELEASES = [ "Release1|Release2|Release3" ]
+RELEASES = "Release1|Release2|Release3"
 ```
 Onde você define os filtros para baixar seus torrents.<br/>
 Pode definir quantos quiser separado cada um por vígula e colocando entre aspas.<br/>
@@ -88,7 +88,7 @@ Você pode usar Wildcards para fazer buscas mais complexas.<br/>
 > - Utilize ```.*``` para buscar por uma quantidade indefinida de caracteres.<br/>
 > - Utilize ```*``` para buscar por qualquer coisa até o final da string.<br/>
 ```
-Ex: RELEASES = [ "Game.*Thrones|Spider.man.2|Splinter.Cell*" ]
+Ex: RELEASES = "Game.*Thrones|Spider.man.2|Splinter.Cell*"
 ```
 
 É a variável do cookie do site.
