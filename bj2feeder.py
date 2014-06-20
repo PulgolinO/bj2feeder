@@ -31,6 +31,7 @@ UID = "Sua_UID_do_BJ2" #Coloque aqui seu UID do BJ2. Não se esqueça de colocar
 #Verifica se algum release definido satisfaz algum download
 if (PASS == "Sua_Passkey_do_BJ2" or UID == "Sua_UID_do_BJ2" or RELEASES == "Release1|Release2|Release3"):
         print( 'Modifique as informações antes de utilizar o script.' )
+        print( 'Toda informação está aqui: https://github.com/pulgalipe/bj2feeder\nBye!' )
 else:
         print('Procurando por torrents para baixar...\n')
         #Define a URL do Tracker que sera acessado pelo feedparser
