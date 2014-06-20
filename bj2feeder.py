@@ -13,7 +13,7 @@ os.chdir( '/home/nome_do_usuario' )
 #Define os releases que deverão ser baixados
 #Não se esqueça de colocar o nome de cada release separado por vígula e dentro de aspas duplas
 RELEASES = [ "Release1|Release2|Release3" ]
-#Ex: RELEASES = [ "Game of Thrones", "Spiderman", "Da Vinci" ]
+#Ex: RELEASES = [ "Game.of.Thrones|Spiderman|Da.Vinci" ]
 
 #Aqui é preciso definir os cookies necessários para acessar o site
 PASS = "Sua_Passkey_do_BJ2" #Coloque aqui sua pass do cookie. Não se esqueça de colocar entre aspas.
