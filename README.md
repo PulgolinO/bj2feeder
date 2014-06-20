@@ -27,7 +27,7 @@ Which you define the folder where your torrents will be downloaded.<br/>
 RELEASES = "Release1|Release2|Release3"
 ```
 Where you define filters to downloads your torrents.<br/>
-You can define hou much filters as you want, since you keep each one separated by pipe inside the quotes.<br/><br/>
+You can define hou much filters as you want, since you keep each one separated by ```|``` inside the quotes.<br/><br/>
 Use of Wildcars are allowed to make more complicated search strings.<br/>
 > - Make use of ```.``` instead space to not break the search.
 > - Make use of ```.*``` to search for an unindefined number os characters.
@@ -82,7 +82,7 @@ Onde você define o diretório onde seus torrents serão baixados.<br/>
 RELEASES = "Release1|Release2|Release3"
 ```
 Onde você define os filtros para baixar seus torrents.<br/>
-Pode definir quantos quiser separado cada um por vígula e colocando entre aspas.<br/>
+Pode definir quantos quiser separado cada um por ```|``` e colocando entre aspas.<br/>
 Você pode usar Wildcards para fazer buscas mais complexas.<br/>
 > - Utilize ```.``` em vez de espaço para não quebrar a busca.<br/>
 > - Utilize ```.*``` para buscar por uma quantidade indefinida de caracteres.<br/>
