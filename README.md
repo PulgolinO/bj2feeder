@@ -19,9 +19,14 @@ Before run the script you need to change some variables on code, like:
 #####os.chdir( '/home/username/some_folder' )
 Which you define the folder where your torrents will be downloaded.
 
-#####RELEASES = [ "Release1", "Release2", "Release3" ]
+#####RELEASES = [ "Release1|Release2|Release3" ]
 Where you define filters to downloads your torrents.
-You can define hou much filters as you want, since you keep each one separated by commas and quotes.
+You can define hou much filters as you want, since you keep each one separated by pipe inside the quotes.
+Use of Wildcars are allowed to make more complicated search strings.
+Make use of ```.``` instead space to not break the search.
+Make use of ```.*``` to search for an unindefined number os characters.
+Make use of ```*``` to search for anything after your search string.
+Ex: RELEASES = [ "Game.*Thrones|Spider.man.2|Splinter.Cell*" ]
 
 #####PASS = "Sua_Passkey_do_BJ2"
 Is your cookie variable.
@@ -59,9 +64,14 @@ Antes de executar o script é preciso mudar algumas variáveis no código do scr
 #####os.chdir( '/home/nome_usuario/algum_diretorio' )
 Onde você define o diretório onde seus torrents serão baixados.
 
-#####RELEASES = [ "Release1", "Release2", "Release3" ]
+#####RELEASES = [ "Release1|Release2|Release3" ]
 Onde você define os filtros para baixar seus torrents.
 Pode definir quantos quiser separado cada um por vígula e colocando entre aspas.
+Você pode usar Wildcards para fazer buscas mais complexas.
+Utilize ```.``` em vez de espaço para não quebrar a busca.
+Utilize ```.*``` para buscar por uma quantidade indefinida de caracteres.
+Utilize ```*``` para buscar por qualquer coisa até o final da string.
+Ex: RELEASES = [ "Game.*Thrones|Spider.man.2|Splinter.Cell*" ]
 
 #####PASS = "Sua_Passkey_do_BJ2"
 É a variável do cookie do site.
