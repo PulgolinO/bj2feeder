@@ -52,5 +52,4 @@ else:
                                 print( 'Link: ' + link )
                                 os.system( "wget -q --header \"Cookie: pass=" + PASS + ";uid=" + UID + "\" -O \"" + title + ".torrent\" " + link )
                                 print( 'Download concluido.\n' )
-print( 'Script finalizado com sucesso!' )
-
+        print( 'Script finalizado com sucesso!' )
