@@ -9,9 +9,11 @@ feedparser, wget
 **How to install the requirements**
 Copy & paste this code in your terminal:
 
-```$ sudo apt-get install wget python-pip python-dev build-essential 
+```sh
+$ sudo apt-get install wget python-pip python-dev build-essential 
 $ sudo pip install --upgrade pip
-$ sudo pip install feedparser```
+$ sudo pip install feedparser
+```
 
 **Usage of the script**
 Just run the script using the command:
