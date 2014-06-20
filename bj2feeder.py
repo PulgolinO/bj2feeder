@@ -1,5 +1,5 @@
 #Importa as bibliotecas necessarias
-import feedparser, urllib2, os
+import feedparser, urllib2, os, re
 
 #-----------------------------------#
 #------CONFIGURACOES DO USUARIO-----#
