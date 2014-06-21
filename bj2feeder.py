@@ -39,17 +39,15 @@ else:
         bjurl = 'http://bj2.me/rss.php'
         bjurl = feedparser.parse( bjurl )
 
-        for rel in range( len(RELEASES) ):
-                #Percorre a lista de feeds e os mostra um a um
-                for max_feeds in range( 20 ):
-                        #percorre os feeds e mostra apenas os que tem alguma palavra definida no
-                        title = bjurl.entries[ max_feeds ].title
-                        link = bjurl.entries[ max_feeds ].link
-                        link = link.replace( 'detalhes', 'download' )
-                        if re.search( RELEASES[ rel ], title, re.I ):
-                                print( 'Baixando Torrent: ' + title )
-                                title = title.encode('ascii', 'ignore')
-                                print( 'Link: ' + link )
-                                os.system( "wget -q --header \"Cookie: pass=" + PASS + ";uid=" + UID + "\" -O \"" + title + ".torrent\" " + link )
-                                print( 'Download concluido.\n' )
+        for max_feeds in range( 20 ):
+                #percorre os feeds e mostra apenas os que tem alguma palavra definida no
+                title = bjurl.entries[ max_feeds ].title
+                link = bjurl.entries[ max_feeds ].link
+                link = link.replace( 'detalhes', 'download' )
+                if re.search( RELEASES, title, re.I ):
+                        print( 'Baixando Torrent: ' + title )
+                        title = title.encode('ascii', 'replace')
+                        print( 'Link: ' + link )
+                        os.system( "wget -q --header \"Cookie: pass=" + PASS + ";uid=" + UID + "\" -O \"" + title + ".torrent\" " + link )
+                        print( 'Download concluido.\n' )
         print( 'Script finalizado com sucesso!' )
