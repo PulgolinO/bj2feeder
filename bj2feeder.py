@@ -19,10 +19,11 @@ RELEASES = "Release1|Release2|Release3"
 #Ex: RELEASES = "Game.of.Thrones|Spiderman|Da.Vinci"
 
 #Aqui é preciso definir os cookies necessários para acessar o site
-PASS = "Sua_Passkey_do_BJ2" #Coloque aqui sua pass do cookie. Não se esqueça de colocar entre aspas.
+PASS = "5Sua_Passkey_do_BJ2" #Coloque aqui sua pass do cookie. Não se esqueça de colocar entre aspas.
 #Ex: PASS = "abcdefg123456789"
-UID = "Sua_UID_do_BJ2" #Coloque aqui seu UID do BJ2. Não se esqueça de colocar entre aspas.
+UID = "ua_UID_do_BJ2" #Coloque aqui seu UID do BJ2. Não se esqueça de colocar entre aspas.
 #Ex: UID = "123456789"
+
 
 #------------------------------------#
 #----NAO EDITE NADA A PARTIR DAQUI---#
